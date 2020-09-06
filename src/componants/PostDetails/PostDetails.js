@@ -32,7 +32,6 @@ const PostDetails = () => {
     },[])
 //comment for that post 
 const [comment, setComment] = useState([]);
-console.log(comment);
     useEffect(() => {
         const url = `https://jsonplaceholder.typicode.com/comments?postId=${postId}`;
         fetch(url)
